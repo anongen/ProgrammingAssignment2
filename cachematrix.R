@@ -1,12 +1,14 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The functions below are used to cache the inverse of a matrix
 
-## Write a short comment describing this function
-# The following function creates an object of type "matrix" 
-# that can cache the inverse matrix
+# The following function creates an object which is
+# a list containing a function to
+#1.  set the value of the matrix
+#2.  get the value of the matrix
+#3.  set the value of the inverse
+#4.  get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-       m <- NULL
+        m <- NULL
         set <- function(y) {
                 x <<- y
                 m <<- NULL
@@ -20,7 +22,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 # The following function checks if the inverse matrix is already calculated
 # and if not it calculates it 
 
